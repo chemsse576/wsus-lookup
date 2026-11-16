@@ -1,4 +1,4 @@
-# WSUS GPO Targets
+# WSUS Lookup
 
 Enumerate machines targeted by WSUS Group Policy Objects in an Active Directory domain.
 
@@ -28,13 +28,13 @@ apt install ldap-utils smbclient
 ## Usage
 
 ```
-python3 wsus_gpo_targets.py -s <DC_IP> -d <DOMAIN> -u <USER> -p <PASSWORD> [-o output.txt]
+python3 wsus_lookup.py -s <DC_IP> -d <DOMAIN> -u <USER> -p <PASSWORD> [-o output.txt]
 ```
 
 ### Example
 
 ```
-python3 wsus_gpo_targets.py -s 10.0.2.1 -d corp.local -u pentest -p 'P@ssw0rd'
+python3 wsus_lookup.py -s 10.0.2.1 -d corp.local -u pentest -p 'P@ssw0rd'
 
 [*] WSUS GPO Targets
     Domain: corp.local | DC: 10.0.2.1
